@@ -120,7 +120,7 @@ function addHotelDetailSectionDataOnUI(hotelData) {
         let data = `
     <div class="host">
                     <div class="hostDetails">
-                        <h2>Entire rental unit hosted by Ghazal</h2>
+                        <h2>Entire rental unit hosted by Aman</h2>
                         <ul>
                             <li>${hotelData.persons} guests</li>|
                             <li>${hotelData.bedrooms} bedroom</li>|
