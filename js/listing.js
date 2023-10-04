@@ -72,8 +72,8 @@ window.addEventListener("DOMContentLoaded", async (event) => {
 // function to fetch api data on load
 async function fetchDataFromAPI() {
     try {
-        // const URL = `${baseUrl}search-location?location=${place}&checkin=${checkin}&checkout=${checkout}&adults=${guestCount}&children=0&infants=0&pets=0&page=1&currency=USD`;
-        const URL = `../sampledata.json`;
+        const URL = `${baseUrl}search-location?location=${place}&checkin=${checkin}&checkout=${checkout}&adults=${guestCount}&children=0&infants=0&pets=0&page=1&currency=USD`;
+        // const URL = `../sampledata.json`;
         const response = await fetch(URL, options);
         result = await response.json();
         return result.results;
