@@ -172,7 +172,7 @@ function addHotelDetailSectionDataOnUI(hotelData) {
 
 // function to add price box data
 function addPriceBoxDataOnUI(hotelData) {
-    console.log(hotelData);
+    // console.log(hotelData);
     try {
         let data = `
     <div class="top">
