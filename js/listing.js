@@ -84,11 +84,6 @@ async function fetchDataFromAPI() {
 
 // function to add fetched data on cards
 function addDataOnCards(cards) {
-
-    document.getElementById('loading').classList.add('inactive');
-    hotelsList.classList.remove('inactive');
-    document.getElementById('map').classList.remove('inactive');
-
     try {
         cards.forEach(async (card) => {
             let distance;
@@ -130,6 +125,11 @@ function addDataOnCards(cards) {
             // Create a marker for this card on the map
             addHotelMarkersOnMap(card);
         });
+    
+    document.getElementById('loading').classList.add('inactive');
+    hotelsList.classList.remove('inactive');
+    document.getElementById('map').classList.remove('inactive');
+        
     } catch (error) {
         console.log(error);
     }
